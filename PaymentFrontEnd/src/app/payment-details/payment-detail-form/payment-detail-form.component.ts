@@ -23,7 +23,7 @@ export class PaymentDetailFormComponent implements OnInit {
     this.service.postPaymentDetail().subscribe(
       res=>{
           this.resetForm(form);
-          this.toastr.success("Successfull submission","Payment Detail Register")
+          this.toastr.success("Successfull submission","Payment Detail Register");
       },
       err=>{console.log(err);}
     );
